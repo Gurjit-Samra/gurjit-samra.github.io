@@ -33,3 +33,29 @@ body{
     text-decoration: none;
 }
 
+.hero-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 91vh;
+    background-color: #EAE7DC;
+}
+
+.hero-text-and-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hero-picture-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-container{
+    display: flex;
+    justify-content: space-around;
+}
+
