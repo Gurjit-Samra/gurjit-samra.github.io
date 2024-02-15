@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav-bar-container{
+    display: flex;
+    justify-content: space-between;
+    size: 10vh;
+    color: rgb(208, 36, 36);
+}
