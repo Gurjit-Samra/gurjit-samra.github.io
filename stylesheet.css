@@ -35,7 +35,7 @@ body{
 
 .hero-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 91vh;
     background-color: #EAE7DC;
@@ -57,5 +57,10 @@ body{
 .socials-container{
     display: flex;
     justify-content: space-around;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
 }
 
