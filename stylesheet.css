@@ -4,13 +4,14 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #EAE7DC;
-
 }
 
-.title {
-    font:'Xanh Mono';
+.titles {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
 }
 
 .nav-bar-container{
@@ -46,16 +47,36 @@ body{
 }
 
 .hero-text-and-button-container{
+    margin-right: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 400px;
+}
+
+
+.contact-button{
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-button:hover{
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hero-visuals-container{
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 
 .socials-container{
