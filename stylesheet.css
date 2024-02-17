@@ -9,6 +9,10 @@ body{
 
 }
 
+.title {
+    font:'Xanh Mono';
+}
+
 .nav-bar-container{
     display: flex;
     justify-content: space-between;
@@ -49,18 +53,32 @@ body{
     width: 50%;
 }
 
-.hero-picture-container{
+.hero-visuals-container{
     display: flex;
     flex-direction: column;
 }
 
 .socials-container{
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
 }
 
 .icons{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.hero-picture-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-picture{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
