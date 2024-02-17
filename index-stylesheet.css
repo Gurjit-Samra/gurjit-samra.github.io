@@ -14,30 +14,6 @@ body{
     color: #000;
 }
 
-.nav-bar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9vh;
-}
-
-.nav-bar-logo{
-    margin-left: 3%;
-    background-color: transparent;
-}
-
-.nav-bar-links-container {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    list-style: none;
-}
-
-.nav-bar-links{
-    color: #000;
-    text-decoration: none;
-}
-
 .hero-container{
     display: flex;
     justify-content: center;
@@ -102,4 +78,3 @@ body{
     height: 300px;
     object-fit: cover;
 }
-
