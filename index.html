@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styleheets/navbar-stylesheet.css">
     <link rel="stylesheet" href="/styleheets/index-stylesheet.css">
+    <link rel="stylesheet" href="/styleheets/contact-form-stylesheet.css">
+    <script src="script.js"></script>
     <title>Gurjit's Home Page</title>
 </head>
 <body>
@@ -17,17 +19,43 @@
             <div class="nav-bar-links-container">
                 <a class="nav-bar-links" href="/about.html">About</a>
                 <a class="nav-bar-links" href="/projects.html">Projects</a>
-                <a class="nav-bar-links" href="#Contact">Contact</a>
+                <a class="nav-bar-links" id="contact-nav" onclick="openContactForm()">Contact</a>
             </div>
         </div>
     </section>
 
     <section id="hero">
         <div class="hero-container">
+
             <div class="hero-text-and-button-container">
                 <h1 class="titles">Gurjit Samra</h1>
-                <button class="contact-button">Get in touch</button>
+                <button class="contact-button" onclick="openContactForm()">Get in touch</button>
             </div>
+
+            <div class="form" id="contactForm">
+                <form action="action_page.php" class="form-container">
+              
+                  <input type="text" id="name" name="firstname" placeholder="Name">
+        
+                  <input type="text" id="email" name="email" placeholder="Email">
+        
+                  <input type="text" id="company" name="companyname" placeholder="Company Name">
+              
+                  <select id="reason" name="reason">
+                    <option value="select">Reason for contacting</option>
+                    <option value="internship">Internship</option>
+                    <option value="job">Job</option>
+                    <option value="networking">Networking</option>
+                  </select>
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="subject" placeholder="Write something to me..." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit" onclick="submitThenClose()">
+              
+                </form>
+            </div>
+
             <div class="hero-visuals-container">
                 <div class="hero-picture-container">
                     <img id="hero-picture" src="/assets/gsprofilepic.jpg" alt="Gurjit Samra Profile Picture">
@@ -39,6 +67,7 @@
             </div>
         </div>
     </section>
+
     
 </body>
 </html>

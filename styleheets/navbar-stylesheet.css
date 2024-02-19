@@ -22,3 +22,7 @@
     color: #000;
     text-decoration: none;
 }
+
+#contact-nav:hover{
+    cursor: pointer;
+}
