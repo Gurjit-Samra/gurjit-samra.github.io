@@ -24,7 +24,8 @@ body{
 #about-pictures:hover{
     transform:rotate3d(0, 1, 0, 360deg);
 }
-.about-text-container{
+
+#about-text-container{
     margin-left: 75px;
     height: 550px;
     width: 450px;

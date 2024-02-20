@@ -22,7 +22,7 @@ body{
     background-color: #EAE7DC;
 }
 
-.hero-text-and-button-container{
+#hero-text-and-button-container{
     margin-right: 25px;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ body{
     cursor: pointer;
 }
 
-.hero-visuals-container{
+#hero-visuals-container{
     margin-left: 25px;
     display: flex;
     flex-direction: column;

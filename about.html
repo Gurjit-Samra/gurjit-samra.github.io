@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styleheets/navbar-stylesheet.css">
     <link rel="stylesheet" href="/styleheets/about-stylesheet.css">
+    <link rel="stylesheet" href="/styleheets/contact-form-stylesheet.css">
+    <script src="script.js"></script>
     <title>Who is Gurjit Samra?</title>
 </head>
 <body>
@@ -17,17 +19,42 @@
             <div class="nav-bar-links-container">
                 <a class="nav-bar-links" href="/about.html">About</a>
                 <a class="nav-bar-links" href="/projects.html">Projects</a>
-                <a class="nav-bar-links" href="#Contact">Contact</a>
+                <a class="nav-bar-links" id="contact-nav" onclick="openContactForm()">Contact</a>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="about-container">
-            <div class="about-picture-container">
+            <div id="about-picture-container">
                 <img id="about-pictures" src="/assets/gsprofilepic.jpg" alt="Gurjit Samra Profile Picture">
             </div>
-            <div class="about-text-container">
+
+            <div class="form" id="contactForm">
+                <form action="action_page.php" class="form-container">
+              
+                  <input type="text" id="name" name="firstname" placeholder="Name" required>
+        
+                  <input type="text" id="email" name="email" placeholder="Email" required>
+        
+                  <input type="text" id="company" name="companyname" placeholder="Company Name*">
+              
+                  <select id="reason" name="reason" required>
+                    <option value="select">Reason for contacting</option>
+                    <option value="internship">Internship</option>
+                    <option value="job">Job</option>
+                    <option value="networking">Networking</option>
+                  </select>
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="subject" placeholder="Write something to me..." style="height:200px" required></textarea>
+              
+                  <input type="submit" value="Submit" onclick="submitThenClose()">
+              
+                </form>
+            </div>
+
+            <div id="about-text-container">
                 <p class="about-text">
                     My name is Gurjit Samra. I am a student at the University of Calgary Ea pede si Nunc (Vero-Est) Esse.
                     S eu me praetermittentium Dapibus Lacaenae ullo v apprecando si januario rem civilis utraque lucern.
