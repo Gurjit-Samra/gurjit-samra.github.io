@@ -1,3 +1,14 @@
+import { createRoot } from 'react-dom/client';
+
+// Clear the existing HTML content
+document.body.innerHTML = '<div id="app"></div>';
+
+// Render your React component instead
+const root = createRoot(document.getElementById('app'));
+root.render(<h1>Hello, world</h1>);
+
+
+
 function openContactForm() {
     document.getElementById("contactForm").style.display = "block";
     if (window.location.pathname == "/index.html") {
