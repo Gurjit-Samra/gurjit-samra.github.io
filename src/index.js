@@ -1,11 +1,12 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 import { createRoot } from 'react-dom/client';
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
 
-// Render your React component instead
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
+const container = document.getElementById('app');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<App tab="home" />);
 
 
 

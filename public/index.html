@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styleheets/navbar-stylesheet.css">
+    <link rel="stylesheet" href="/src/styleheets/index-stylesheet.css">
+    <title>Gurjit's Home Page</title>
+</head>
+<body>
+
+    <div id="root">
+        <section id="desktop-nav">
+            <div class="nav-bar-container">
+                <div class="nav-bar-logo">
+                    <a href="/pages/index.html"><img src="/assets/GS.png" alt="Gurjit Samra Logo"></a>
+                </div>
+                <div class="nav-bar-links-container">
+                    <a class="nav-bar-links" href="/pages/about.html">About</a>
+                    <a class="nav-bar-links" href="/pages/projects.html">Projects</a>
+                    <a class="nav-bar-links" id="contact-nav" onclick="openContactForm()">Contact</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="hero">
+            <div class="hero-container">
+    
+                <div id="hero-text-and-button-container">
+                    <h1 class="titles">Gurjit Samra</h1>
+                    <button class="contact-button" onclick="openContactForm()">Get in touch</button>
+                </div>
+    
+                <div class="form" id="contactForm">
+                    <form action="action_page.php" class="form-container">
+                  
+                      <input type="text" id="name" name="firstname" placeholder="Name" required >
+            
+                      <input type="text" id="email" name="email" placeholder="Email" required>
+            
+                      <input type="text" id="company" name="companyname" placeholder="Company Name*">
+                  
+                      <select id="reason" name="reason" required>
+                        <option value="select">Reason for contacting</option>
+                        <option value="internship">Internship</option>
+                        <option value="job">Job</option>
+                        <option value="networking">Networking</option>
+                      </select>
+                  
+                      <label for="message">Message</label>
+                      <textarea id="message" name="subject" placeholder="Write something to me..." style="height:200px" required></textarea>
+                  
+                      <input type="submit" value="Submit" onclick="submitThenClose()">
+                  
+                    </form>
+                </div>
+    
+                <div id="hero-visuals-container">
+                    <div class="hero-picture-container">
+                        <img id="hero-picture" src="/assets/gsprofilepic.jpg" alt="Gurjit Samra Profile Picture">
+                    </div>
+                    <div class="socials-container">
+                        <a target=”_blank” href="https://github.com/Gurjit-Samra"><img class="icons" src="/assets/github.png" alt="Github Icon"></a>
+                        <a target=”_blank” href="https://www.linkedin.com/in/gurjit-samra/"><img class="icons" src="/assets/linkedin.png" alt="LinkedIn Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/src/index.js"></script>
+</body>
+</html>
