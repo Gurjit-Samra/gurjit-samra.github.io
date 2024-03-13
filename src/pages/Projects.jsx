@@ -1,6 +1,5 @@
 import React from "react";
-import BasicPage from "../components/PageComponents/BasicPage";
-
+import BasicPage from "../components/BasicPage";
 function Projects() {
   return (
     <div>

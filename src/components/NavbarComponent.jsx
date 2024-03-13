@@ -8,7 +8,7 @@ const NavbarComponent = () => {
     <section id="desktop-nav">
         <div className="nav-bar-container">
             <div className="nav-bar-logo">
-                <Link to="/pages/Home"><img src="/assets/GS.png" alt="Gurjit Samra Logo" /></Link>
+                <Link to="/"><img src="/assets/GS.png" alt="Gurjit Samra Logo" /></Link>
             </div>
             <div className="nav-bar-links-container">
                 <li><Link className="nav-bar-links" to="/pages/about">About</Link></li>

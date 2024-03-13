@@ -1,6 +1,5 @@
 import React from "react";
-import NavbarComponent from "../components/PageComponents/NavbarComponent";
-import BasicPage from "../components/PageComponents/BasicPage";
+import BasicPage from "../components/BasicPage";
 
 function Contact() {
   return (
