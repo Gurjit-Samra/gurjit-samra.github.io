@@ -1,6 +1,6 @@
 import React from "react";
 import NavbarComponent  from "./NavbarComponent";
-import "./BasicPage.css";
+import "../styles/BasicPage.css";
 
 const BasicPage = () => {
     return (

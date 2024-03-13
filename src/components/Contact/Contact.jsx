@@ -1,5 +1,5 @@
 import React from "react";
-import BasicPage from "../components/BasicPage";
+import BasicPage from '../../global/components/BasicPage'
 
 function Contact() {
   return (

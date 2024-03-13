@@ -1,11 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body{
-    background-color: #EAE7DC;
-}
 
 .titles {
     font-family: 'Roboto', sans-serif;
