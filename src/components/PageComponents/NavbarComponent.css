@@ -12,6 +12,7 @@
 }
 
 .nav-bar-links-container {
+    margin-right: 3%;
     display: flex;
     justify-content: space-around;
     width: 30%;
