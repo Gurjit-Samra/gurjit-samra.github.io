@@ -1,11 +1,12 @@
 import React from "react";
 import BasicPage from '../../global/components/BasicPage'
 import './Home.css';
+import NavbarComponent from "../../global/components/NavbarComponent";
 
 function Home() {
     return (
       <div>
-        <BasicPage />
+        <NavbarComponent />
         <section id="hero">
 
           <div className="hero-container">

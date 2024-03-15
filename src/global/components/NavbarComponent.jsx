@@ -55,6 +55,4 @@ const NavbarComponent = () => {
     );
 };
 
-
-export { HamburgerIcon, NavItem };
 export default NavbarComponent;

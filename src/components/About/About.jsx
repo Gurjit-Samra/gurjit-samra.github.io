@@ -2,13 +2,12 @@ import React from "react";
 import BasicPage from "../../global/components/BasicPage";
 //import "./About.css";
 import "../../global/styles/main.css";
+import NavbarComponent from "../../global/components/NavbarComponent";
 
 function About() {
   return (
     <div>
-      <BasicPage />
-      <section id="about">
-
+      <BasicPage>
         <div className="about-container">
 
           <div id="about-picture-container">
@@ -46,10 +45,8 @@ function About() {
               stay sharp and in shape.
             </p>
           </div>
-
         </div>
-
-      </section>
+      </BasicPage>
     </div>
   );
 }
