@@ -75,3 +75,18 @@
     height: 300px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 768px){
+    #hero{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        justify-content: space-around;
+    }
+
+    #hero-text-and-button-container{
+        margin-bottom: 600px;
+        margin-left: 55px;
+    }
+
+    
+}
