@@ -1,9 +1,16 @@
-* {
+/* Import Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles */
+/* ... */
+*{
     margin: 0;
     padding: 0;
 }
 
-body{
+.basic-page{
     background-color: #EAE7DC;
 }
 

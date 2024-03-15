@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './contact-form-stylesheet.css'
 
 
 const FormComponent = () => {
@@ -31,9 +32,9 @@ const FormComponent = () => {
     };
 
     return (
-        <div>
-            <h2>Contact Form</h2>
-            <form onSubmit={handleSubmit}>
+        <div className="form-container">
+            <h2>Contact Me</h2>
+            <form onSubmit={handleSubmit} className="form">
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"
@@ -41,6 +42,7 @@ const FormComponent = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
+                    required
                 />
 
                 <label htmlFor="email">Email:</label>
@@ -50,9 +52,37 @@ const FormComponent = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
+                    required
                 />
 
-                <button type="submit">Submit</button>
+                
+                    <label htmlFor="reason">Reason for contacting:</label>
+                    <select
+                    id="reason"
+                    name="reason"
+                    value={formData.reason}
+                    onChange={handleInputChange}
+                    required
+                    >
+                    <option value="">Select a reason</option>
+                    <option value="general">General inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                    </select>
+    
+
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
+                    />
+
+
+
+                <button type="submit" id='submitButton'>Submit</button>
             </form>
         </div>
     );

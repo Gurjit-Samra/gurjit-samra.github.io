@@ -1,12 +1,18 @@
 import React from "react";
 import BasicPage from '../../global/components/BasicPage'
+import FormComponent from './FormComponent'
+import './Contact.css'
 
 function Contact() {
   return (
     <div>
       <BasicPage />
-      <h1>Contact Me</h1>
+      <section id="contact">
+        <FormComponent />
+      </section>
+      
     </div>
+    
   );
 }
 

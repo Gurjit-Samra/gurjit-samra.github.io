@@ -1,4 +1,5 @@
 import React from 'react';
+import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
 
 
@@ -11,7 +12,8 @@ const App = () => {
 return(
     <Router>
         <Routes>
-            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/"  element={<Home />} />
+            <Route exact path="/Home"  element={<Home />} />
             <Route exact path="/About" element={<About/>} />
             <Route exact path="/Projects" element={<Projects/>} />
             <Route exact path="/Contact"  element={<Contact />} />

@@ -1,12 +1,12 @@
 import React from "react";
 import NavbarComponent  from "./NavbarComponent";
-import "../styles/BasicPage.css";
+import "../styles/main.css";
 
-const BasicPage = () => {
+const BasicPage = ({ children }) => {
     return (
-        <>
-        <NavbarComponent />
-        </>
+        <div className="basic-page">
+            <NavbarComponent />
+        </div>
     );
 };
 

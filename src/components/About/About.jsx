@@ -1,6 +1,7 @@
 import React from "react";
 import BasicPage from "../../global/components/BasicPage";
-import "./About.css";
+//import "./About.css";
+import "../../global/styles/main.css";
 
 function About() {
   return (
