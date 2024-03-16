@@ -1,0 +1,77 @@
+/* Import Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom styles */
+/* ... */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg: #242526;
+    --bg-accent: #484a4d;
+    --text-color: #dadce1;
+    --nav-size: 9vh;
+    --border: 1px solid #474a4d;
+    --border-radius: 8px;
+    --speed: 500ms;
+}
+
+.basic-page{
+    background-color: #EAE7DC;
+}
+
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+#about-pictures{
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+}
+
+#about-text-container{
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+.about-text{
+    font-family:Georgia, serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .about-container{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 0px 50px 0px 50px;
+    }
+
+    #about-picture-container{
+        margin-top: 100px;
+    }
+
+    #about-text-container{
+        padding: 0px;
+    }
+
+    .about-text{
+        align-self: center;
+        justify-self: center;
+    }
+
+
+
+
+
+    
+}
