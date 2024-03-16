@@ -1,10 +1,13 @@
 import React from "react";
 import BasicPage from '../../global/components/BasicPage';
+import CardComponent from './CardComponent';
 
 function Projects() {
   return (
     <div>
-      <BasicPage />
+      <BasicPage>
+        <CardComponent />
+      </BasicPage>
     </div>
   );
 }

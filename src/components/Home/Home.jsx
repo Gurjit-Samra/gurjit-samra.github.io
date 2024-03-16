@@ -4,46 +4,46 @@ import './Home.css';
 import NavbarComponent from "../../global/components/NavbarComponent";
 
 function Home() {
-    return (
-      <div>
-        <NavbarComponent />
-        <section id="hero">
+    
+  return (
+    <div>
+      <NavbarComponent />
+      <section id="hero">
 
-          <div className="hero-container">
-            <div id="hero-text-and-button-container">
-              <h1 className="titles">Gurjit Samra</h1>
-              <button className="contact-button" >Get in touch</button>
-            </div>
+        <div className="hero-container">
+          <div id="hero-text-and-button-container">
+            <h1 className="titles">Gurjit Samra</h1>
+            <a href="/Contact"><button className="contact-button">Get in touch</button></a>
+          </div>
+        </div>
+
+        <div id="hero-visuals-container">
+
+          <div className="hero-picture-container">
+            <img
+              id="hero-picture"
+              src="/assets/gsprofilepic.jpg"
+              alt="Gurjit Samra Profile Picture"
+            />
           </div>
 
-          <div id="hero-visuals-container">
-
-            <div className="hero-picture-container">
+          <div className="socials-container">
+            <a target="”_blank”" href="https://github.com/Gurjit-Samra">
+              <img className="icons" src="/assets/github.png" alt="Github Icon" />
+            </a>
+            <a target="”_blank”" href="https://www.linkedin.com/in/gurjit-samra/">
               <img
-                id="hero-picture"
-                src="/assets/gsprofilepic.jpg"
-                alt="Gurjit Samra Profile Picture"
+                className="icons"
+                src="/assets/linkedin.png"
+                alt="LinkedIn Icon"
               />
-            </div>
-
-            <div className="socials-container">
-              <a target="”_blank”" href="https://github.com/Gurjit-Samra">
-                <img className="icons" src="/assets/github.png" alt="Github Icon" />
-              </a>
-              <a target="”_blank”" href="https://www.linkedin.com/in/gurjit-samra/">
-                <img
-                  className="icons"
-                  src="/assets/linkedin.png"
-                  alt="LinkedIn Icon"
-                />
-              </a>
-            </div>
-
+            </a>
           </div>
 
-        </section>
+        </div>
 
-      </div>
+      </section>
+  </div>
     );
 }
 

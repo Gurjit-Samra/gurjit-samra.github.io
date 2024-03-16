@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import  {useRef} from 'react';
 import './contact-form-stylesheet.css'
+import emailjs from '@emailjs/browser';
+
 
 
 const FormComponent = () => {
@@ -15,9 +18,7 @@ const FormComponent = () => {
 
     // Function to handle input changes
     const handleInputChange = (e) => {
-        
         const { name, value } = e.target;
-
         setFormData({
             ...formData,
             [name]: value,
@@ -28,13 +29,34 @@ const FormComponent = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Do something with the form data here
-        console.log(formData);
+        emailjs
+            .sendForm(
+                'service_ml1nkzh',
+                'template_6gad0dj',
+                e.target, {
+                publicKey: 'GiI9SJnznVcHa__fJ', 
+            })
+            .then(
+                ()=>{
+                    alert('Email sent successfully!');
+                    setFormData({
+                        name: '',
+                        email: '',
+                        companyName: '',
+                        reason: '',
+                        message: '',
+                    });
+                },
+                (error) => {
+                    alert('Email failed to send', error);
+                },
+            );
     };
 
     return (
         <div className="form-container">
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit} className="form">
+            <h2>Let's Connect</h2>
+            <form className="form" onSubmit={handleSubmit} >
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"
@@ -56,8 +78,8 @@ const FormComponent = () => {
                 />
 
                 
-                    <label htmlFor="reason">Reason for contacting:</label>
-                    <select
+                <label htmlFor="reason">Reason for contacting:</label>
+                <select
                     id="reason"
                     name="reason"
                     value={formData.reason}
@@ -68,20 +90,17 @@ const FormComponent = () => {
                     <option value="general">General inquiry</option>
                     <option value="feedback">Feedback</option>
                     <option value="support">Support</option>
-                    </select>
+                </select>
     
 
-                    <label htmlFor="message">Message:</label>
-                    <textarea
+                <label htmlFor="message">Message:</label>
+                <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    />
-
-
-
+                />
                 <button type="submit" id='submitButton'>Submit</button>
             </form>
         </div>
