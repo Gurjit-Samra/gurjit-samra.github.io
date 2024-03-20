@@ -11,7 +11,7 @@
 }
 
 :root{
-    --bg: #242526;
+    --bg:#fcfcfc;
     --bg-accent: #484a4d;
     --text-color: #dadce1;
     --nav-size: 9vh;
@@ -21,7 +21,7 @@
 }
 
 .basic-page{
-    background-color: #EAE7DC;
+    background-color: var(--bg);
 }
 
 
@@ -53,7 +53,7 @@
     .about-container{
         flex-direction: column-reverse;
         justify-content: space-between;
-        margin: 0px 50px 0px 50px;
+        margin: 50px 50px 0px 50px;
     }
 
     #about-picture-container{

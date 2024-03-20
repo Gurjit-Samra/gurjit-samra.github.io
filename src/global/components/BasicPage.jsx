@@ -7,12 +7,12 @@ import "../styles/main.css";
 
 const BasicPage = (props) => {
     return (
-        <>
-        <NavbarComponent />
-        <div className={props.className}>
+        <div className="basic-page">
+            <NavbarComponent />
+            <div className={props.className}>
             {props.children}
+            </div>
         </div>
-        </>
         
     );
 };

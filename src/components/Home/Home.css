@@ -35,12 +35,13 @@
     border-radius: 25px;
     background-color: #000;
     color: #fff;
-    text-decoration: none;
+    font-size: 13px;
 }
 
 .contact-button:hover{
-    background-color: #566d9a;
+    background-color: #3451c7;
     color: #000;
+    size: 13px;
     cursor: pointer;
 }
 

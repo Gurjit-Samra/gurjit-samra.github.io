@@ -1,55 +1,140 @@
 /* Add a background color and some padding around the form */
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+@keyframes wiggle {
+  0% { transform: translateY(-5px) }
+  10% { transform: translateY(-5px) }
+  20% { transform: translateY(-5px) rotate(20deg); }
+  60% { transform: translateY(-5px) rotate(-20deg); }
+  100% { transform: translateY(-5px) rotate(0deg); }
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   max-width: 350px;
-  border-radius: 25px;
-  background-color: #f2f2f2;
-  padding: 20px 80px 20px 80px ;
+  border-radius: 30px;
+  padding: 25px 40px 25px 40px ;
+  color: black;
+  /* apply shadow below container*/
+  box-shadow: 0px 4px 8px 8px rgba(0,0,0,0.3);
 }
 
+.thank-you, .info-prompt{
+  display: none;
+}
+
+
 .form {
+    width: 250px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+}
+
+.form-container.submitted {
+
+  padding: 0px 10px 0px 20px ;
+  height: 500px;
+  background-color: #3351c6 ;
+  border-color: black;
+  border-width: 1px;
+
+
+  .form{
+    display: none;
+  }
+  #title{
+    display: none;
+  }
+  .thank-you {
+    display:flex;
+    border: none;
+    border-bottom: 10px #2a4770;
+    flex-direction: column;
+    justify-content: end;
+    height: 275px;
+    width: 350px;
+    font-size: 60px;
+    color: white;
   }
 
-/* Style inputs with type="text", select elements and textareas */
-#name, #reason, #email {
-    width: 100%; /* Full width */
-    height: 25px; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
- /* Allow the user to vertically resize the textarea (not horizontally) */
+  .info-prompt{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 225px;
+    width: 350px;
+    font-size: 20px;
+    color: white;
   }
+
+}
+
+label[for="name"], label[for="reason"], label[for="email"], label[for="message"] {
+  font-size: 10px;
+}
+
+
+/* Style inputs */
+input[type="text"], input[type="reason"], input[type="email"] {
+    color: black;
+    width: 100%; /* Full width */
+    height: 30px; /* Full width */
+    border:none;
+    border-bottom: 1px solid #e3e1e1; /* Gray border *//* Make sure that padding and width stays in place */
+    margin-top: 5px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+#reason {
+  color: black;
+    width: 100%; /* Full width */
+    border:none;
+    border-bottom: 1px solid #e3e1e1; /* Gray border *//* Make sure that padding and width stays in place */
+    margin-top: 5px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+
+}
+
+input[type="text"]:focus, input[type="email"]:focus, #reason:focus {
+    outline: none;
+    border-bottom: 1.5px solid black;
+}
+
   
 
-  #message {
-    width: 100%; /* Full width */
-    height: 100px; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-  }
+#message {
+  width: 100%; /* Full width */
+  height: 100px; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid black; /* Gray border */
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 25px; /* Bottom margin */
+  color: black;
+}
 
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
 
-  /* Style the submit button with a specific background color etc */
-  #submitButton {
-    padding: 12px 20px;
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 10px;
-    cursor: pointer;
-  }
+/* Style the submit button with a specific background color etc */
+#submitButton {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  align-items: center;
+}
 
-  #submitButton:hover {
-    background-color: #45a049;
-  }
+#submitButton:hover {
+  animation: wiggle 2.0s ease-in-out infinite;
+}

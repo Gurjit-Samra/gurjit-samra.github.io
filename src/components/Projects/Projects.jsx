@@ -1,12 +1,12 @@
 import React from "react";
 import BasicPage from '../../global/components/BasicPage';
-import CardComponent from './CardComponent';
+import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
     <div>
       <BasicPage>
-        <CardComponent />
+        <ProjectCard />
       </BasicPage>
     </div>
   );

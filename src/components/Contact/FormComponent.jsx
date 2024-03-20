@@ -11,9 +11,9 @@ const FormComponent = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        companyName: '',
         reason: '',
         message: '',
+        submitted: false,
     });
 
     // Function to handle input changes
@@ -38,13 +38,12 @@ const FormComponent = () => {
             })
             .then(
                 ()=>{
-                    alert('Email sent successfully!');
                     setFormData({
                         name: '',
                         email: '',
-                        companyName: '',
                         reason: '',
                         message: '',
+                        submitted: true,
                     });
                 },
                 (error) => {
@@ -54,9 +53,9 @@ const FormComponent = () => {
     };
 
     return (
-        <div className="form-container">
-            <h2>Let's Connect</h2>
-            <form className="form" onSubmit={handleSubmit} >
+        <div className={`form-container${formData.submitted ? ' submitted' : ''}`}>
+            <h1 id='title'>Let's Connect !</h1>
+            <form className='form' onSubmit={handleSubmit} >
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"
@@ -87,9 +86,9 @@ const FormComponent = () => {
                     required
                     >
                     <option value="">Select a reason</option>
-                    <option value="general">General inquiry</option>
+                    <option value="network">Network</option>
                     <option value="feedback">Feedback</option>
-                    <option value="support">Support</option>
+                    <option value="insternship">Internship</option>
                 </select>
     
 
@@ -101,8 +100,18 @@ const FormComponent = () => {
                     onChange={handleInputChange}
                     required
                 />
-                <button type="submit" id='submitButton'>Submit</button>
+                <div className='button-container'>
+                    <label id="submit-label">Send</label>
+                    <button type="submit" id='submitButton' ><img src="../../../assets/emailicon.png" className='email-icon'/></button>
+                </div>
+                
             </form>
+            <div className='thank-you'>
+                <h1>Thank     You.</h1>
+            </div>
+            <div className='info-prompt'>
+                <p>I will be in touch.<br></br>Shortly!</p>
+            </div>
         </div>
     );
 };
