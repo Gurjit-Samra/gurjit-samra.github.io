@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import '../styles/NavbarComponent.css';
 import { Link } from 'react-router-dom';
+import PositionedMenu from "./NavMenu";
 
 const HamburgerIcon = () => {
     return (
@@ -38,9 +39,7 @@ const NavbarComponent = () => {
         </NavItem>
         
         <NavItem className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onclick={toggleMenu}>
-            <span className="menu-line"></span>
-            <span className="menu-line"></span>
-            <span className="menu-line"></span>
+            <PositionedMenu />
         </NavItem>
 
         <NavItem className="nav-bar-links-container">

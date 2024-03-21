@@ -3,12 +3,14 @@
     justify-content: space-between;
     align-items: center;
     height: var(--nav-size);
+    width: 100%;
 }
 
 .nav-bar-logo{
-    margin-left: 50px;
+    margin-left: 25px;
     background-color: transparent;
     justify-self: center;
+    align-self: center;
 }
 
 .nav-bar-links-container  {
@@ -38,6 +40,7 @@
 
 
 @media screen and (max-width: 768px){
+
     .menu-icon {
         display: block; /* Show on smaller screens */
         margin-right: 25px;
