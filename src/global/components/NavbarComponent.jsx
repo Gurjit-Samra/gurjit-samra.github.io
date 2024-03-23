@@ -35,7 +35,7 @@ const NavbarComponent = () => {
     <nav className="nav-bar-container">
 
         <NavItem className="nav-bar-logo">
-            <Link to="/Home"><img src="/assets/GS.png" alt="Gurjit Samra Logo" /></Link>
+            <Link to="/Home"><img src="/assets/GS (1).png" alt="Gurjit Samra Logo" /></Link>
         </NavItem>
         
         <NavItem className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onclick={toggleMenu}>
