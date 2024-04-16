@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%3Cyour-repo-name%3E/static/css/main.b557d1b5.css",
+    "main.js": "/%3Cyour-repo-name%3E/static/js/main.c696ca0f.js",
+    "index.html": "/%3Cyour-repo-name%3E/index.html",
+    "main.b557d1b5.css.map": "/%3Cyour-repo-name%3E/static/css/main.b557d1b5.css.map",
+    "main.c696ca0f.js.map": "/%3Cyour-repo-name%3E/static/js/main.c696ca0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b557d1b5.css",
+    "static/js/main.c696ca0f.js"
+  ]
+}
