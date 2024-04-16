@@ -2,6 +2,7 @@ import React from "react";
 import BasicPage from '../../global/components/BasicPage'
 import './Home.css';
 import NavbarComponent from "../../global/components/NavbarComponent";
+import { Link } from 'react-router-dom';
 
 function Home() {
     
