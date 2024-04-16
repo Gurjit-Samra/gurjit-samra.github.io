@@ -13,7 +13,7 @@ function Home() {
         <div className="hero-container">
           <div id="hero-text-and-button-container">
             <h1 className="titles">Gurjit Samra</h1>
-            <a href="/Contact"><button className="contact-button">Get in touch</button></a>
+            <a to="/Contact"><button className="contact-button">Get in touch</button></a>
           </div>
         </div>
 
