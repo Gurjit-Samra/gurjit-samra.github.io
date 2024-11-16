@@ -1,1 +1,8 @@
+.cardText {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-wrap: wrap;
+}
 

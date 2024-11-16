@@ -1,31 +1,30 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { Button, Card, CardActions, CardContent, CardMedia, Chip, Typography } from '@mui/material';
 
-export default function MediaCard() {
+const ProjectCard = ({ title, description, image, tags, demoLink }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Check Back Later
+    <Card sx={{ minWidth: 300, margin: 2, borderRadius: 5, height: 400}} raised elevation={6}>
+      <CardMedia sx={{ height: 140}} image={image} title={title} />
+      <CardContent >
+        <Typography gutterBottom variant="h5" component="div" className='cardText'>
+          {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Gurjit is currently hard at work on his next project. Check back later for updates.
+        <Typography variant="body2" color="text.secondary" className='cardText'>
+          {description}
         </Typography>
+        <div style={{ marginTop: 8 }}>
+          {tags.map((tag, index) => (
+            <Chip key={index} label={tag} variant="outlined" sx={{ marginRight: 0.5 }} />
+          ))}
+        </div>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" href={demoLink} target="_blank">
+          Demo
+        </Button>
       </CardActions>
     </Card>
   );
-}
+};
+
+export default ProjectCard;

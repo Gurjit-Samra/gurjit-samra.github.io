@@ -1,12 +1,11 @@
 import React from 'react';
-import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
 
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact'
-import Projects from './components/Projects/Projects'
+import Projects from './components/Projects/Projects.jsx'
 
 const App = () => {
 return(
