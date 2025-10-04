@@ -3,7 +3,6 @@
 #contact {
     background-color: var(--bg);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 91vh;
+    flex-direction: column;
+    height: 100vh;
 }
